@@ -1,14 +1,6 @@
 from core import tool
 import torch, torchvision
-import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
-
-
-
-# 打开主窗口
-tool.start()
-
-
 
 # 模型准确性验证
 data_root = 'F:\\TORCH_HOME\\dataset\\CIFAR10'

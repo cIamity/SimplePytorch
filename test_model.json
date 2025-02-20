@@ -1,0 +1,839 @@
+{
+    "counter": {
+        "Input": 1,
+        "Output": 1,
+        "Conv1d": 0,
+        "Conv2d": 3,
+        "Conv3d": 0,
+        "ConvT1d": 0,
+        "ConvT2d": 0,
+        "ConvT3d": 0,
+        "BN1d": 0,
+        "BN2d": 4,
+        "BN3d": 0,
+        "LN": 0,
+        "IN1d": 0,
+        "IN2d": 0,
+        "IN3d": 0,
+        "GN": 0,
+        "ReLU": 4,
+        "LeakyReLU": 0,
+        "ReLU6": 0,
+        "Sigmoid": 0,
+        "Tanh": 0,
+        "Softmax": 1,
+        "Softplus": 0,
+        "Softsign": 0,
+        "ELU": 0,
+        "SELU": 0,
+        "GELU": 0,
+        "Hardtanh": 0,
+        "Hardshrink": 0,
+        "LogSigmoid": 0,
+        "PReLU": 0,
+        "RReLU": 0,
+        "Softshrink": 0,
+        "Threshold": 0,
+        "MP1d": 0,
+        "MP2d": 4,
+        "MP3d": 0,
+        "AP1d": 0,
+        "AP2d": 0,
+        "AP3d": 0,
+        "AMP1d": 0,
+        "AMP2d": 0,
+        "AMP3d": 0,
+        "AAP1d": 0,
+        "AAP2d": 0,
+        "AAP3d": 0,
+        "Linear": 3,
+        "Bilinear": 0,
+        "Dropout": 1,
+        "Dropout2d": 0,
+        "Dropout3d": 0,
+        "A-Dropout": 0,
+        "RNN": 0,
+        "GRU": 0,
+        "LSTM": 0,
+        "RNNCell": 0,
+        "GRUCell": 0,
+        "LSTMCell": 0,
+        "Trans": 0,
+        "TransEnc": 0,
+        "TransDec": 0,
+        "TransEncL": 0,
+        "TransDecL": 0,
+        "MHA": 0,
+        "Flatten": 1,
+        "Unflatten": 0,
+        "Add": 0,
+        "Mul": 0,
+        "Maximum": 0,
+        "Minimum": 0,
+        "Mean": 0,
+        "Sum": 0,
+        "Cat": 0,
+        "Stack": 0,
+        "Split": 0,
+        "View": 0,
+        "Permute": 0,
+        "Transpose": 0,
+        "Repeat": 0
+    },
+    "modules": [
+        {
+            "name": "Input_0",
+            "layer_name": "Input",
+            "position": [
+                -510.0,
+                -170.0
+            ],
+            "parameters": {}
+        },
+        {
+            "name": "Conv2d_0",
+            "layer_name": "Conv2d",
+            "position": [
+                -289.0,
+                -170.0
+            ],
+            "parameters": {
+                "in_channels": {
+                    "__type__": "int",
+                    "value": 3
+                },
+                "out_channels": {
+                    "__type__": "int",
+                    "value": 32
+                },
+                "kernel_size": {
+                    "__type__": "tuple",
+                    "value": [
+                        3,
+                        3
+                    ]
+                },
+                "stride": {
+                    "__type__": "tuple",
+                    "value": [
+                        1,
+                        1
+                    ]
+                },
+                "padding": {
+                    "__type__": "tuple",
+                    "value": [
+                        1,
+                        1
+                    ]
+                },
+                "dilation": {
+                    "__type__": "tuple",
+                    "value": [
+                        1,
+                        1
+                    ]
+                },
+                "groups": {
+                    "__type__": "int",
+                    "value": 1
+                },
+                "padding_mode": {
+                    "__type__": "str",
+                    "value": "zeros"
+                }
+            }
+        },
+        {
+            "name": "Conv2d_1",
+            "layer_name": "Conv2d",
+            "position": [
+                391.0,
+                -17.0
+            ],
+            "parameters": {
+                "in_channels": {
+                    "__type__": "int",
+                    "value": 32
+                },
+                "out_channels": {
+                    "__type__": "int",
+                    "value": 64
+                },
+                "kernel_size": {
+                    "__type__": "tuple",
+                    "value": [
+                        3,
+                        3
+                    ]
+                },
+                "stride": {
+                    "__type__": "tuple",
+                    "value": [
+                        1,
+                        1
+                    ]
+                },
+                "padding": {
+                    "__type__": "tuple",
+                    "value": [
+                        1,
+                        1
+                    ]
+                },
+                "dilation": {
+                    "__type__": "tuple",
+                    "value": [
+                        1,
+                        1
+                    ]
+                },
+                "groups": {
+                    "__type__": "int",
+                    "value": 1
+                },
+                "padding_mode": {
+                    "__type__": "str",
+                    "value": "zeros"
+                }
+            }
+        },
+        {
+            "name": "Conv2d_2",
+            "layer_name": "Conv2d",
+            "position": [
+                -289.0,
+                170.0
+            ],
+            "parameters": {
+                "in_channels": {
+                    "__type__": "int",
+                    "value": 64
+                },
+                "out_channels": {
+                    "__type__": "int",
+                    "value": 128
+                },
+                "kernel_size": {
+                    "__type__": "tuple",
+                    "value": [
+                        3,
+                        3
+                    ]
+                },
+                "stride": {
+                    "__type__": "tuple",
+                    "value": [
+                        1,
+                        1
+                    ]
+                },
+                "padding": {
+                    "__type__": "tuple",
+                    "value": [
+                        1,
+                        1
+                    ]
+                },
+                "dilation": {
+                    "__type__": "tuple",
+                    "value": [
+                        1,
+                        1
+                    ]
+                },
+                "groups": {
+                    "__type__": "int",
+                    "value": 1
+                },
+                "padding_mode": {
+                    "__type__": "str",
+                    "value": "zeros"
+                }
+            }
+        },
+        {
+            "name": "ReLU_0",
+            "layer_name": "ReLU",
+            "position": [
+                -51.0,
+                -170.0
+            ],
+            "parameters": {
+                "inplace": {
+                    "__type__": "bool",
+                    "value": false
+                }
+            }
+        },
+        {
+            "name": "ReLU_1",
+            "layer_name": "ReLU",
+            "position": [
+                170.0,
+                -17.0
+            ],
+            "parameters": {
+                "inplace": {
+                    "__type__": "bool",
+                    "value": false
+                }
+            }
+        },
+        {
+            "name": "ReLU_2",
+            "layer_name": "ReLU",
+            "position": [
+                -51.0,
+                170.0
+            ],
+            "parameters": {
+                "inplace": {
+                    "__type__": "bool",
+                    "value": false
+                }
+            }
+        },
+        {
+            "name": "ReLU_3",
+            "layer_name": "ReLU",
+            "position": [
+                629.0,
+                -170.0
+            ],
+            "parameters": {
+                "inplace": {
+                    "__type__": "bool",
+                    "value": false
+                }
+            }
+        },
+        {
+            "name": "BN2d_0",
+            "layer_name": "BN2d",
+            "position": [
+                170.0,
+                -170.0
+            ],
+            "parameters": {
+                "num_features": {
+                    "__type__": "int",
+                    "value": 32
+                },
+                "eps": {
+                    "__type__": "float",
+                    "value": 1e-05
+                },
+                "momentum": {
+                    "__type__": "float",
+                    "value": 0.1
+                },
+                "affine": {
+                    "__type__": "bool",
+                    "value": true
+                },
+                "track_running_stats": {
+                    "__type__": "bool",
+                    "value": true
+                }
+            }
+        },
+        {
+            "name": "BN2d_1",
+            "layer_name": "BN2d",
+            "position": [
+                -51.0,
+                -17.0
+            ],
+            "parameters": {
+                "num_features": {
+                    "__type__": "int",
+                    "value": 64
+                },
+                "eps": {
+                    "__type__": "float",
+                    "value": 1e-05
+                },
+                "momentum": {
+                    "__type__": "float",
+                    "value": 0.1
+                },
+                "affine": {
+                    "__type__": "bool",
+                    "value": true
+                },
+                "track_running_stats": {
+                    "__type__": "bool",
+                    "value": true
+                }
+            }
+        },
+        {
+            "name": "BN2d_2",
+            "layer_name": "BN2d",
+            "position": [
+                170.0,
+                170.0
+            ],
+            "parameters": {
+                "num_features": {
+                    "__type__": "int",
+                    "value": 128
+                },
+                "eps": {
+                    "__type__": "float",
+                    "value": 1e-05
+                },
+                "momentum": {
+                    "__type__": "float",
+                    "value": 0.1
+                },
+                "affine": {
+                    "__type__": "bool",
+                    "value": true
+                },
+                "track_running_stats": {
+                    "__type__": "bool",
+                    "value": true
+                }
+            }
+        },
+        {
+            "name": "MP2d_0",
+            "layer_name": "MP2d",
+            "position": [
+                391.0,
+                -170.0
+            ],
+            "parameters": {
+                "kernel_size": {
+                    "__type__": "int",
+                    "value": 2
+                },
+                "stride": {
+                    "__type__": "int",
+                    "value": 2
+                },
+                "padding": {
+                    "__type__": "int",
+                    "value": 0
+                },
+                "dilation": {
+                    "__type__": "int",
+                    "value": 1
+                },
+                "return_indices": {
+                    "__type__": "bool",
+                    "value": false
+                },
+                "ceil_mode": {
+                    "__type__": "bool",
+                    "value": false
+                }
+            }
+        },
+        {
+            "name": "MP2d_1",
+            "layer_name": "MP2d",
+            "position": [
+                -289.0,
+                -17.0
+            ],
+            "parameters": {
+                "kernel_size": {
+                    "__type__": "int",
+                    "value": 2
+                },
+                "stride": {
+                    "__type__": "int",
+                    "value": 2
+                },
+                "padding": {
+                    "__type__": "int",
+                    "value": 0
+                },
+                "dilation": {
+                    "__type__": "int",
+                    "value": 1
+                },
+                "return_indices": {
+                    "__type__": "bool",
+                    "value": false
+                },
+                "ceil_mode": {
+                    "__type__": "bool",
+                    "value": false
+                }
+            }
+        },
+        {
+            "name": "MP2d_2",
+            "layer_name": "MP2d",
+            "position": [
+                391.0,
+                170.0
+            ],
+            "parameters": {
+                "kernel_size": {
+                    "__type__": "int",
+                    "value": 2
+                },
+                "stride": {
+                    "__type__": "int",
+                    "value": 2
+                },
+                "padding": {
+                    "__type__": "int",
+                    "value": 0
+                },
+                "dilation": {
+                    "__type__": "int",
+                    "value": 1
+                },
+                "return_indices": {
+                    "__type__": "bool",
+                    "value": false
+                },
+                "ceil_mode": {
+                    "__type__": "bool",
+                    "value": false
+                }
+            }
+        },
+        {
+            "name": "Flatten_0",
+            "layer_name": "Flatten",
+            "position": [
+                629.0,
+                170.0
+            ],
+            "parameters": {
+                "start_dim": {
+                    "__type__": "int",
+                    "value": 1
+                },
+                "end_dim": {
+                    "__type__": "int",
+                    "value": -1
+                }
+            }
+        },
+        {
+            "name": "Linear_0",
+            "layer_name": "Linear",
+            "position": [
+                629.0,
+                -17.0
+            ],
+            "parameters": {
+                "in_features": {
+                    "__type__": "int",
+                    "value": 2048
+                },
+                "out_features": {
+                    "__type__": "int",
+                    "value": 64
+                }
+            }
+        },
+        {
+            "name": "Dropout_0",
+            "layer_name": "Dropout",
+            "position": [
+                629.0,
+                -323.0
+            ],
+            "parameters": {
+                "p": {
+                    "__type__": "float",
+                    "value": 0.5
+                },
+                "inplace": {
+                    "__type__": "bool",
+                    "value": false
+                }
+            }
+        },
+        {
+            "name": "Linear_1",
+            "layer_name": "Linear",
+            "position": [
+                391.0,
+                -323.0
+            ],
+            "parameters": {
+                "in_features": {
+                    "__type__": "int",
+                    "value": 64
+                },
+                "out_features": {
+                    "__type__": "int",
+                    "value": 10
+                }
+            }
+        },
+        {
+            "name": "Output_0",
+            "layer_name": "Output",
+            "position": [
+                -51.0,
+                -323.0
+            ],
+            "parameters": {}
+        }
+    ],
+    "lines": [
+        {
+            "start": "Input_0",
+            "end": "Conv2d_0",
+            "anchors": [
+                [
+                    -340.0,
+                    -119.0
+                ],
+                [
+                    -289.0,
+                    -119.0
+                ]
+            ]
+        },
+        {
+            "start": "Conv2d_0",
+            "end": "ReLU_0",
+            "anchors": [
+                [
+                    -119.0,
+                    -119.0
+                ],
+                [
+                    -51,
+                    -119
+                ]
+            ]
+        },
+        {
+            "start": "Conv2d_1",
+            "end": "ReLU_1",
+            "anchors": [
+                [
+                    391.0,
+                    34.0
+                ],
+                [
+                    340,
+                    34
+                ]
+            ]
+        },
+        {
+            "start": "Conv2d_2",
+            "end": "ReLU_2",
+            "anchors": [
+                [
+                    -119.0,
+                    221.0
+                ],
+                [
+                    -51,
+                    221
+                ]
+            ]
+        },
+        {
+            "start": "ReLU_0",
+            "end": "BN2d_0",
+            "anchors": [
+                [
+                    119.0,
+                    -119.0
+                ],
+                [
+                    170,
+                    -119
+                ]
+            ]
+        },
+        {
+            "start": "ReLU_1",
+            "end": "BN2d_1",
+            "anchors": [
+                [
+                    170.0,
+                    34.0
+                ],
+                [
+                    119,
+                    34
+                ]
+            ]
+        },
+        {
+            "start": "ReLU_2",
+            "end": "BN2d_2",
+            "anchors": [
+                [
+                    119.0,
+                    221.0
+                ],
+                [
+                    170,
+                    221
+                ]
+            ]
+        },
+        {
+            "start": "ReLU_3",
+            "end": "Dropout_0",
+            "anchors": [
+                [
+                    714.0,
+                    -170.0
+                ],
+                [
+                    714,
+                    -221
+                ]
+            ]
+        },
+        {
+            "start": "BN2d_0",
+            "end": "MP2d_0",
+            "anchors": [
+                [
+                    340.0,
+                    -119.0
+                ],
+                [
+                    391,
+                    -119
+                ]
+            ]
+        },
+        {
+            "start": "BN2d_1",
+            "end": "MP2d_1",
+            "anchors": [
+                [
+                    -51.0,
+                    34.0
+                ],
+                [
+                    -119,
+                    34
+                ]
+            ]
+        },
+        {
+            "start": "BN2d_2",
+            "end": "MP2d_2",
+            "anchors": [
+                [
+                    340.0,
+                    221.0
+                ],
+                [
+                    391,
+                    221
+                ]
+            ]
+        },
+        {
+            "start": "MP2d_0",
+            "end": "Conv2d_1",
+            "anchors": [
+                [
+                    476.0,
+                    -68.0
+                ],
+                [
+                    476,
+                    -17
+                ]
+            ]
+        },
+        {
+            "start": "MP2d_1",
+            "end": "Conv2d_2",
+            "anchors": [
+                [
+                    -187.0,
+                    85.0
+                ],
+                [
+                    -187,
+                    170
+                ]
+            ]
+        },
+        {
+            "start": "MP2d_2",
+            "end": "Flatten_0",
+            "anchors": [
+                [
+                    561.0,
+                    221.0
+                ],
+                [
+                    629,
+                    221
+                ]
+            ]
+        },
+        {
+            "start": "Flatten_0",
+            "end": "Linear_0",
+            "anchors": [
+                [
+                    714.0,
+                    170.0
+                ],
+                [
+                    714,
+                    85
+                ]
+            ]
+        },
+        {
+            "start": "Linear_0",
+            "end": "ReLU_3",
+            "anchors": [
+                [
+                    714.0,
+                    -17.0
+                ],
+                [
+                    714,
+                    -68
+                ]
+            ]
+        },
+        {
+            "start": "Dropout_0",
+            "end": "Linear_1",
+            "anchors": [
+                [
+                    629.0,
+                    -272.0
+                ],
+                [
+                    561.0,
+                    -272.0
+                ]
+            ]
+        },
+        {
+            "start": "Linear_1",
+            "end": "Output_0",
+            "anchors": [
+                [
+                    391.0,
+                    -272.0
+                ],
+                [
+                    119,
+                    -272
+                ]
+            ]
+        }
+    ]
+}
