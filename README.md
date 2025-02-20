@@ -32,6 +32,19 @@ from core import tool
 
 model = tool.load_model("Your Path To Model.pt", print_model=True)
 ```
+## 模型的输入输出结构
+### 模型有单个输入x时
+`output = model(x)`即可完成前向传播
+### 模型有多个输入时
+假设有三个输入，则图中应该定义`input_0,input_1,input_3(序号不一定连续）`，此时`output = model(input_0, input_1, input_3)`，即序号升序排序输入
+### 模型为单个输出时
+`output = model(x)[0]`,由于模型返回值是一个输出列表，所以需要取第一个值
+### 模型为多个输出时
+假设有三个，则
+```
+outputs = model(x)
+output_0, output_1, output_2 = outputs
+```
 ## 测试文件
 作者已写好训练和预测使用例，该使用例在CIFAR-10上进行训练和验证。<br>
 在UI界面可以打开工程`test_model.josn`，该工程搭建了一个简单的CNN神经网络，并且设置好了各网络层参数，可以直接导出对应模型。<br>
