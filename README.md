@@ -7,7 +7,9 @@
 需要python版本 `python = 3.10.16`<br>
 代码中已写好`requirements.txt`文件，使用`pip install -r requirements.txt`即可配置<br>
 各个包和库以及python都是作者运行时使用的版本，其他版本是否可行尚待验证<br>
-> 注意:`requirements.txt`内默认安装的pytorch和torchvision是CPU版本，需要运行GPU版本请删去`requirements.txt`内的`torch==2.5.1`与`torchvision==0.20.1`，并自行安装
+> 注意:<br>
+> `requirements.txt`内默认安装的pytorch和torchvision是CPU版本，需要运行GPU版本请删去`requirements.txt`内的`torch==2.5.1`与`torchvision==0.20.1`，并自行安装<br>
+> `requirements.txt`安装了tensorboard，用来训练时绘制可视化损失和准确率变化图，如果不需要可以自行删去
 ## UI界面操作说明
 运行以下代码可以打开程序UI界面
 ```python
