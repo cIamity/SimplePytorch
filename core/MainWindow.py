@@ -1,7 +1,8 @@
 from .config import *
 from .canvas_window import GraphicsScene, GraphicsView
-from .canvas_item import LineItem
+from .canvas_item import ModuleItem, LineItem
 from .export import ExportDialog
+
 
 #todo：print替换;
 
@@ -248,8 +249,34 @@ class MainWindow(QMainWindow):
             with open(file_path, "r", encoding="utf-8") as f:
                 project_data = json.load(f)
             
-            # 清空当前画布
+            # 清空原工程的数据
+            # 取消选中项
+            if self.canvas_scene.select_item:
+                self.canvas_scene.select_item.setSelected(False)
+                self.canvas_scene.select_item = None
+
+            # 删除未完成的连线
+            if self.canvas_scene.drawing_line:
+                self.canvas_scene.removeItem(self.canvas_scene.drawing_line)
+                self.canvas_scene.drawing_line = None
+                self.canvas_scene.start_module = None
+                self.canvas_scene.views()[0].setCursor(Qt.ArrowCursor)  # 还原鼠标指针
+
+            # 移除预览中的模块
+            if self.canvas_scene.temp_item:
+                self.canvas_scene.removeItem(self.canvas_scene.temp_item)
+                self.canvas_scene.temp_item = None
+
+            # 手动清除所有 ModuleItem 和 LineItem
+            items_to_remove = list(self.canvas_scene.items())  # 获取所有场景中的项
+            for item in items_to_remove:
+                if isinstance(item, (ModuleItem, LineItem)):
+                    self.canvas_scene.removeItem(item)
+
+            # 调用 clear()
             self.canvas_scene.clear()
+
+            # 清空拓扑图
             self.canvas_scene.G.clear()
 
             # 重新加载模块
@@ -445,12 +472,6 @@ class CustomScrollBar(QScrollBar):
             }
         """)
 #endregion
-
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    myWin = MainWindow()
-    myWin.show()
-    sys.exit(app.exec_())
 
 def start():
     app = QApplication(sys.argv)
