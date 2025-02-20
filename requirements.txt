@@ -1,0 +1,4 @@
+PyQt5==5.15.11
+torch==2.5.1
+numpy==2.0.1
+networkx==3.2.1
