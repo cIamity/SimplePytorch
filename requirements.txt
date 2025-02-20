@@ -3,3 +3,4 @@ torch==2.5.1
 torchvision==0.20.1
 numpy==2.0.1
 networkx==3.2.1
+tensorboard==2.18.0
