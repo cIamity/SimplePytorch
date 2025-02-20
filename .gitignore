@@ -23,7 +23,7 @@ env/
 *.bak
 
 # 日志文件
-logs/
+log/
 *.log
 
 # Jupyter Notebook 缓存（如果使用 Jupyter）
